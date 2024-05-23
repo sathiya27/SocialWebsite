@@ -49,7 +49,7 @@
                 <input type="text" id="search-box" placeholder="Search... ">
             </div>
             <div>
-                <img src="images/search.jpg" alt="" style="width: 42px; border-radius: 20px;">
+                <img src="images/selfie.jpg" alt="" style="width: 42px; border-radius: 20px;">
             </div>
         </div>
     </div>
