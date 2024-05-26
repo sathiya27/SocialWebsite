@@ -47,12 +47,76 @@
     }
 
     #bg-content {
-        margin-top: -210px;
+        margin-top: -25%;
         width: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
+    }
+
+    #profile-nav {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 2px 0;
+    }
+
+    #profile-content {
+        display: flex;
+    }
+
+    #friend-list {
+        flex: 1;
+        background-color: white;
+        color: #aaa;
+        padding: 8px;
+        min-height: 500px;
+    }
+
+    #post-list {
+        flex: 2.5;
+        padding-left: 13px;
+    }
+
+    #friends_bar {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #friends_bar li img{
+        width: 75px;
+        float: left;
+        margin: 8px;
+    }
+
+    #friends_bar li {
+        clear: both;
+        font-size: 15px;
+        font-weight: bold;
+        color: #405d9b;
+    }
+
+    #friends_bar .users {
+        color: #aaa;
+        font-size: 10px;
+    }
+
+    #post-list textarea {
+        width: 100%;
+        border: none;
+        font-family: tahoma;
+        font-size: 14px;
+        height: 70px;
+    }
+
+    #post-button {
+        float: right;
+        background-color: #405d9b;
+        border: none;
+        color: white;
+        padding: 4px;
+        font-size: 14px;
+        border-radius: 4px;
+        width: 50px;
+
     }
 
 </style>
@@ -70,18 +134,70 @@
         </div>
     </div>
 
-    <!-- cover -->
-    <div style="width: 800px; margin: auto; background-color:black;">
+    <div style="width: 65%; margin: auto;">
+        <!-- cover -->
         <div style="background-color: white; text-align: center; color: #405d9b;">
             <img src="images/mountain.jpg" alt="" style="width: 100%;"><br> 
             <div id="bg-content">
                 <img src="images/selfie.jpg" alt="" id="profile-pic"><br>
-                <span style="color: white; font-size: 24px; ">Mary Watson</span>
+                <span style="color: white; font-size: 24px;">Mary Watson</span>
+            </div>
+            <ul id="profile-nav">
+                <li>Timeline</li>
+                <li>About</li>
+                <li>Friends</li>
+                <li>Photos</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+
+        <!-- Profile Content -->
+        <div id="profile-content">
+            <!-- Friends area -->
+            <div id="friend-list">
+                <Span>Friends</Span><br>
+
+                <ul id="friends_bar">
+                    <li>
+                        <img src="images/user1.jpg" alt="">
+                        <br>
+                        Bernt Ash Rupert <br>
+                        <span class="users">First User</span>
+                    </li>
+                    <li>
+                        <img src="images/user2.jpg" alt="">
+                        <br>
+                        Robert Downey Jr <br>
+                        <span class="users">Second User</span>
+                    </li>
+                    <li>
+                        <img src="images/user3.jpg" alt="">
+                        <br>
+                        Tammmy HideinStone <br>
+                        <span class="users">Third User</span>
+                    </li>
+                    <li>
+                        <img src="images/user4.jpg" alt="">
+                        <br>
+                        Tommas shellby shopee <br>
+                        <span class="users">Fourth User</span>
+                    </li>
+                </ul>
+
             </div>
 
-            <br>
-            Timeline About Friends Photos Settings
+            <!-- Posts area -->
+            <div id="post-list">
+
+                <div style="border: solid thin #aaa; padding: 10px; background-color: white;">
+                    <textarea name="" placeholder="Whats on your mind?"></textarea>
+                    <input type="submit" id="post-button" value="Post"><br>
+
+                </div>
+
+            </div>
         </div>
     </div>
+
 </body>
 </html>
